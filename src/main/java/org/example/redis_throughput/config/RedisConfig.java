@@ -19,7 +19,7 @@ public class RedisConfig {
     Config config(RedisProperties redisProperties) {
         var config = new Config();
         config.useSingleServer()
-                .setConnectionPoolSize(10)
+                .setConnectionPoolSize(8)
                 .setConnectionMinimumIdleSize(2)
                 .setAddress(redisProperties.getUrl())
                 .setPassword(redisProperties.getPassword())
