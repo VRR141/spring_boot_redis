@@ -4,10 +4,9 @@ spring:
 
   data:
     redis:
-      host: localhost
-      port: 6379
       password: q1w2e3r4
       client-name: ${spring.application.name}
+      url: redis://10.0.2.2:6379
 
 server:
   port: 8099
